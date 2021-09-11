@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #163A17;
+    /* background-color: #F2F2F2; */
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #163A17;
+}
+
+h1 {
+    font-size: 4.75rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2.25rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 2.25rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-style: 1.95rem;
+    font-weight: 800;
+}
+
+.logo>img {
+    width: 2.5rem;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+nav {
+    text-align: right;
+}
+
+main {
+    padding: 10rem 14rem 0rem;
+    background-image: url('./images/bladdruppel.png');
+    background-repeat: no-repeat;
+    background-size: 1500px auto;
+    background-position: -2rem 2rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.main__about {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+
+.main__team {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.main__introduction {
+    margin-bottom: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__introduction__image>img {
+    display: block;
+    width: 14.375rem;
+    height: 14.375rem;
+    background-color: lightgreen;
+    border-radius: 50%;
+}
+
+.main__introduction__image--left {
+    margin-right: 4.5rem;
+}
+
+.main__introduction__image--right {
+    margin-left: 4.5rem;
+}
+
+.button {
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.navbutton {
+    background-color: #E0EFE1;
+    color: #163A17;
+    width: 10rem;
+    height: 2.125rem;
+    line-height: 1.5;
+    
+}
+
+.navbutton:hover {
+    background-color: #ABF8B0;
+}
+
+.orderbutton {
+    background-color: #A7DB7F;
+    color: #FFFFFF;
+    width: 15.625rem;
+    height: 5rem;
+    line-height: 3.4;
+}
+
+.orderbutton:hover {
+    background-color: #163A17;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 4.5rem;
+    background-image: url('./images/bladdruppel.png');
+    background-repeat: no-repeat;
+    background-size: 2000px auto;
+    background-position: top right top;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: red;
+    }
+  }
