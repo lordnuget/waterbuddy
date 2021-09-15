@@ -6,6 +6,12 @@
   padding: 0;
 }
 
+/*
+// ------------------------------------- //
+// ---------- DESKTOP VERSION ---------- //
+// ------------------------------------- //
+*/
+
 body {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.25rem;
@@ -67,6 +73,10 @@ header {
 
 .menu {
   display: none;
+}
+
+.menu__links {
+  display: block;
 }
 
 nav {
@@ -185,6 +195,11 @@ footer {
   background-position: right top;
 }
 
+/*
+// ------------------------------------- //
+// ---------- MOBILE VERSION ---------- //
+// ------------------------------------- //
+*/
 @media only screen and (max-width: 1000px) {
   .menu__button {
     width: 2.5rem;
@@ -283,5 +298,54 @@ footer {
   .main__introduction__image > img {
     width: 10rem;
     height: 10rem;
+  }
+}
+
+/*
+// --------------------------------------- //
+// ---------- SCROLL ANIMATIONS ---------- //
+// --------------------------------------- //
+*/
+
+.main__introduction__image {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.main__introduction__image.scrolled {
+  opacity: 1;
+}
+
+.main__introduction__image--left.scrolled {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.main__introduction__image--right.scrolled {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px) rotate(-90deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px) rotate(90deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1;
   }
 }
