@@ -19,13 +19,22 @@ function toggleMenu(){
 // ---------- SCROLL ANIMATIONS ---------- //
 // --------------------------------------- //
 
-// Alle elementen die we moeten animeren stoppen we in een const
+/*
+// Deze animaties heb ik leren maken met behulp van https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671
+// Ik heb die code uitvoerig bestudeerd en met het toevoegen van de onderstaande comments wil ik laten zien dat ik de code begrijp en kan toepassen.
+// Ook heb ik de code iets veranderd zodat ik geen aanpassingen aan mijn HTML hoefde te doen en slechts beperkte aanpassingen aan mijn CSS.
+*/
+
+
+// Alle elementen die we moeten animeren stoppen we in een const, zo kunnen we die straks makkelijk oproepen
 const animatedElements = document.querySelectorAll(".main__introduction__image");
 
 
-// Bepalen of een element in zicht is door de positie van de bovenkant van het element te vergelijken met de hoogte van de viewport
+// We bepalen of een element in zicht is door de positie van de bovenkant van het element te vergelijken met de hoogte van de viewport
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
+  console.log(`elementTop: ${elementTop}`);
+  
 
   return (
     elementTop <=
@@ -67,4 +76,7 @@ const handleScrollAnimation = () => {
 // Een EventListener om te kijken of de window gescrolled wordt. Zo ja, roep dan de functie handleScrollAnimation aan
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
+  console.log(`window.innerHeight: ${window.innerHeight}`);
+  console.log(`document.documentElement.clientHeight: ${document.documentElement.clientHeight}`);
+  console.log(`document.documentElement.clientHeight / 1.25: ${document.documentElement.clientHeight/1.25}`);
 });
