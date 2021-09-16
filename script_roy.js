@@ -76,7 +76,7 @@ const handleScrollAnimation = () => {
 // Een EventListener om te kijken of de window gescrolled wordt. Zo ja, roep dan de functie handleScrollAnimation aan
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
-  console.log(`window.innerHeight: ${window.innerHeight}`);
-  console.log(`document.documentElement.clientHeight: ${document.documentElement.clientHeight}`);
-  console.log(`document.documentElement.clientHeight / 1.25: ${document.documentElement.clientHeight/1.25}`);
+  // console.log(`window.innerHeight: ${window.innerHeight}`);
+  // console.log(`document.documentElement.clientHeight: ${document.documentElement.clientHeight}`);
+  // console.log(`document.documentElement.clientHeight / 1.25: ${document.documentElement.clientHeight/1.25}`);
 });
