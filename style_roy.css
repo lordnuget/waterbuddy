@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;700&display=swap");
 
+/*
+
+ __          __   _            ____            _     _       
+ \ \        / /  | |          |  _ \          | |   | |      
+  \ \  /\  / /_ _| |_ ___ _ __| |_) |_   _  __| | __| |_   _ 
+   \ \/  \/ / _` | __/ _ \ '__|  _ <| | | |/ _` |/ _` | | | |
+    \  /\  / (_| | ||  __/ |  | |_) | |_| | (_| | (_| | |_| |
+     \/  \/ \__,_|\__\___|_|  |____/ \__,_|\__,_|\__,_|\__, |
+                                                        __/ |
+                                                       |___/ 
+
+Welkom in deze stylesheet.
+Met dit stylesheet-bestand wil ik laten zien dat ik voldoende vaardigheden bezit om deze module FDD met een goed cijfer af te sluiten.
+
+Bij vragen, opmerkingen of tips, neem vooral contact met mij op.
+
+Roy Schrauwen
+
+*/
+
 :root {
   --clr-primary-dark: #163a17;
   --clr-primary-medium: #276500;

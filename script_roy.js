@@ -1,12 +1,37 @@
+/*
+
+ __          __   _            ____            _     _       
+ \ \        / /  | |          |  _ \          | |   | |      
+  \ \  /\  / /_ _| |_ ___ _ __| |_) |_   _  __| | __| |_   _ 
+   \ \/  \/ / _` | __/ _ \ '__|  _ <| | | |/ _` |/ _` | | | |
+    \  /\  / (_| | ||  __/ |  | |_) | |_| | (_| | (_| | |_| |
+     \/  \/ \__,_|\__\___|_|  |____/ \__,_|\__,_|\__,_|\__, |
+                                                        __/ |
+                                                       |___/ 
+
+Welkom in deze file.
+Met deze .js file wil ik laten zien dat ik voldoende vaardigheden bezit om deze module FDD met een goed cijfer af te sluiten.
+
+Ik heb het bestand in meerdere stukken verdeeld. Deze delen heb ik van comments voorzien om aan te tonen dat ik begrijp wat de code doet.
+
+Bij vragen, opmerkingen of tips, neem vooral contact met mij op.
+
+Roy Schrauwen
+
+*/
+
 // ---------------------------------------------- //
 // ---------- HAMBURGER MENU OP MOBILE ---------- //
 // ---------------------------------------------- //
 
+// Allereerst zoek ik de div op met daarin alle links van het menu.
 const menuLinks = document.getElementById('menuLinks');
 
+// Ik pak de knop die ik heb gemaakt en zorg ervoor dat er een functie aangeroepen wordt als men op de knop klikt.
 const menuButton = document.getElementById('menuButton');
 menuButton.addEventListener("click", toggleMenu);
 
+// In deze functie verander ik de zichtbaarheid van het menu door hem tussen block en none te togglen.
 function toggleMenu(){
     if(menuLinks.style.display === "block") {
         menuLinks.style.display = "none";
