@@ -6,6 +6,8 @@ WaterBuddy is our fictional business project for the course Front-end Design & D
 
 This GitHub repository is the outcome of that assignment.
 
+💻 **Live Page:** www.waterbuddy.nl
+
 <img src="./images/responsive_screenshot.png" alt="Screenshot of the WaterBuddy Website" style="zoom:75%;" />
 
 ## Table on Contents
