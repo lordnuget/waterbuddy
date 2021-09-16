@@ -223,6 +223,10 @@ footer {
 // ------------------------------------- //
 */
 @media only screen and (max-width: 1000px) {
+  .logo {
+    font-size: var(--fs-mobile-3);
+    margin-left: -2rem;
+  }
   .menu__button {
     width: 2.5rem;
     height: 2.5rem;
