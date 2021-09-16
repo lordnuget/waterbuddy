@@ -33,7 +33,7 @@ const animatedElements = document.querySelectorAll(".main__introduction__image")
 // We bepalen of een element in zicht is door de positie van de bovenkant van het element te vergelijken met de hoogte van de viewport
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
-  console.log(`elementTop: ${elementTop}`);
+  // console.log(`elementTop: ${elementTop}`);
   
 
   return (
