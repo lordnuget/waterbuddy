@@ -25,19 +25,19 @@ Roy Schrauwen
 // ---------------------------------------------- //
 
 // Allereerst zoek ik de div op met daarin alle links van het menu.
-const menuLinks = document.getElementById('menuLinks');
+const menuLinks = document.getElementById("menuLinks");
 
 // Ik pak de knop die ik heb gemaakt en zorg ervoor dat er een functie aangeroepen wordt als men op de knop klikt.
-const menuButton = document.getElementById('menuButton');
+const menuButton = document.getElementById("menuButton");
 menuButton.addEventListener("click", toggleMenu);
 
 // In deze functie verander ik de zichtbaarheid van het menu door hem tussen block en none te togglen.
-function toggleMenu(){
-    if(menuLinks.style.display === "block") {
-        menuLinks.style.display = "none";
-    } else {
-        menuLinks.style.display = "block";
-    }
+function toggleMenu() {
+  if (menuLinks.style.display === "block") {
+    menuLinks.style.display = "none";
+  } else {
+    menuLinks.style.display = "block";
+  }
 }
 
 // --------------------------------------- //
@@ -50,16 +50,15 @@ function toggleMenu(){
 // Ook heb ik de code iets veranderd zodat ik geen aanpassingen aan mijn HTML hoefde te doen en slechts beperkte aanpassingen aan mijn CSS.
 */
 
-
 // Alle elementen die we moeten animeren stoppen we in een const, zo kunnen we die straks makkelijk oproepen
-const animatedElements = document.querySelectorAll(".main__introduction__image");
-
+const animatedElements = document.querySelectorAll(
+  ".main__introduction__image"
+);
 
 // We bepalen of een element in zicht is door de positie van de bovenkant van het element te vergelijken met de hoogte van de viewport
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
   // console.log(`elementTop: ${elementTop}`);
-  
 
   return (
     elementTop <=
@@ -93,13 +92,13 @@ const handleScrollAnimation = () => {
     if (elementInView(el, 1.25)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
-      hideScrollElement(el)
+      hideScrollElement(el);
     }
-  })
-}
+  });
+};
 
 // Een EventListener om te kijken of de window gescrolled wordt. Zo ja, roep dan de functie handleScrollAnimation aan
-window.addEventListener("scroll", () => { 
+window.addEventListener("scroll", () => {
   handleScrollAnimation();
   // console.log(`window.innerHeight: ${window.innerHeight}`);
   // console.log(`document.documentElement.clientHeight: ${document.documentElement.clientHeight}`);
